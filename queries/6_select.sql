@@ -52,4 +52,4 @@ SELECT m.title, mc.persons_id, mcp.name
 		INNER JOIN persons p ON md.persons_id = p.id
 		INNER JOIN cast_in_movies mc ON mc.movies_id = m.id
 		INNER JOIN persons mcp ON mcp.id = mc.persons_id
-	AND p.name LIKE '%James Cameron%'; -- results in 0 movies, because Aliens was not part of the list... 
+	AND p.name LIKE '%James Cameron%';
